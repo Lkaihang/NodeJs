@@ -1,0 +1,20 @@
+1. 检查存在
+  fs.existsSync(path)
+2.获取状态
+  fs.stat(path, callback)
+  fs.statSync(path)
+     -获取状态 
+     -它给我们返回一个对象，这个对象中保存了当前状态的相关信息
+3.读取一个目录
+  fs.readdir(path[, options], callback)
+    -读取一个目录
+4.截断文件
+  fs.truncate(path, len, callback)
+  fs.truncateSync(path, len)
+5.创建一个目录
+  fs.mdir(path, callback)
+  fs.rmdir()删除
+6.修改
+  fs.rename(oldPath, newPath, callback)
+7.监听
+  fs.watchFile(filename, callback)
